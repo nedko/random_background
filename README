@@ -1,0 +1,7 @@
+Put backgrounds pictues in ~/Pictures/backgrounds/ and when you run the random_background.sh script a random image will be set as your gnome background.
+
+This script is known to work on Fedora 17.
+
+Some ideas for using this script:
+ * Make a desktop launcher for the script
+ * Run the script on login
