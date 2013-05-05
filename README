@@ -1,7 +1,9 @@
 Put backgrounds pictues in ~/Pictures/backgrounds/ and when you run the random_background.sh script a random image will be set as your gnome background.
+If your screen is rotating (a tablet for example), you can put pictures in ~/Pictures/backgrounds/portrait/ and ~/Pictures/backgrounds/landscape/ directories. These will be added to the pictures in the ~/Pictures/backgrounds/ directory and the resulting set will be used for random picture selection.
 
 This script is known to work on Fedora 17.
 
 Some ideas for using this script:
  * Make a desktop launcher for the script
  * Run the script on login
+ * Run the script when orientation changes
