@@ -18,7 +18,14 @@ backgrounds="${backgrounds1}
 ${backgrounds2}"
 if test -z "${backgrounds}"; then exit 0; fi
 
-background=`echo "${backgrounds}" | shuf -n1`
+if test "${current_background}"
+then
+  filter="grep -v ${current_background}"
+else
+  filter=cat
+fi
+
+background=`echo "${backgrounds}" | ${filter} | shuf -n1`
 
 if test "${background}"
 then
