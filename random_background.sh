@@ -25,7 +25,7 @@ else
   filter=cat
 fi
 
-background=`echo "${backgrounds}" | ${filter} | shuf -n1`
+background=`echo "${backgrounds}" | ${filter} | grep -v '^$' | shuf -n1`
 
 if test "${background}"
 then
